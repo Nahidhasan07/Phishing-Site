@@ -1,7 +1,7 @@
-# Install ngrok, 
+# Install ngrok
 https://medium.com/@yayahc/share-your-local-website-for-free-1a423f9a9593
 
-# insert the auth token
+# Insert the auth token
 conf.get_default().auth_token = "token"
 run the FB.py file
 
